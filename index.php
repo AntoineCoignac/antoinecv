@@ -17,7 +17,39 @@ header("Content-type: text/html; charset=utf-8");
 
 <body>
   <header>
-    <a href="menu.html"><img src="images/menu.png" alt="" /></a>
+      <!--<a href="menu.html"><img src="images/menu.png" alt="" /></a>-->
+      <nav role="navigation">
+          <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+
+              <!--
+              Some spans to act as a hamburger.
+
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                  <a href="index.php#Presentation"><li>Présentation</li></a>
+                  <a href="index.php#Competences"><li>Compétences</li></a>
+                  <a href="index.php#QualitesDefauts"><li>Qualités</li></a>
+                  <a href="index.php#Parcours"><li>Parcours</li></a>
+                  <a href="index.php#Realisations"><li>Réalisations</li></a>
+                  <a href="index.php#Contact"><li>Contact</li></a>
+              </ul>
+          </div>
+      </nav>
   </header>
   <main>
     <section id="hautdepage">
@@ -60,6 +92,7 @@ header("Content-type: text/html; charset=utf-8");
           $lecteur = null;
           ?>
         </div>
+        <div class="space"></div>
         <img src="images/langages.svg" alt="" />
         <div id="competencesLangages">
           <?php
@@ -92,11 +125,11 @@ header("Content-type: text/html; charset=utf-8");
     <div id="QualitesDefauts">
       <h2>• Qualités</h2>
       <div class="contentQualitésDéfauts">
-        <div><img src="images/1200x900.png" alt="" /><h3>Impliqué</h3></div>
-        <div><img src="images/1200x900.png" alt="" /><h3>Créatif</h3></div>
-        <div><img src="images/1200x900.png" alt="" /><h3>Efficace</h3></div>
-        <div><img src="images/1200x900.png" alt="" /><h3>Organisé</h3></div>
-        <div><img src="images/1200x900.png" alt="" /><h3>Cultivé</h3></div>
+        <div><img src="images/implique.png" alt="" /><h3>Impliqué</h3></div>
+        <div><img src="images/creatif.png" alt="" /><h3>Créatif</h3></div>
+        <div><img src="images/efficace.png" alt="" /><h3>Efficace</h3></div>
+        <div><img src="images/organise.png" alt="" /><h3>Organisé</h3></div>
+        <div><img src="images/cultive.png" alt="" /><h3>Cultivé</h3></div>
       </div>
     </div>
     <div id="Parcours">
@@ -130,23 +163,23 @@ header("Content-type: text/html; charset=utf-8");
       <h2>• Réalisations</h2>
       <div class="contentRéalisations">
         <div>
-          <img src="images/pvadroyale.jpg" alt="" />
+            <a href="realisations.php"><img src="images/pvadroyale.jpg" alt="" /></a>
           <h3> ►</h3>
         </div>
         <div>
-          <img src="images/pvesport.jpg" alt="" />
+            <a href="realisations.php"><img src="images/pvesport.jpg" alt="" /></a>
           <h3> ►</h3>
         </div>
         <div>
-          <img src="images/pvaffiches.jpg" alt="" />
+            <a href="realisations.php"><img src="images/pvaffiches.jpg" alt="" /></a>
           <h3> ►</h3>
         </div>
         <div>
-          <img src="images/pvshowop.jpg" alt="" />
+            <a href="realisations.php"><img src="images/pvshowop.jpg" alt="" /></a>
           <h3> ►</h3>
         </div>
         <div>
-          <img src="images/pvyoutube.jpg" alt="" />
+            <a href="realisations.php"><img src="images/pvyoutube.jpg" alt="" /></a>
           <h3> ►</h3>
         </div>
       </div>
