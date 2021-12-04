@@ -164,23 +164,23 @@ header("Content-type: text/html; charset=utf-8");
       <div class="contentRéalisations">
         <div>
             <a href="realisations.php"><img src="images/pvadroyale.jpg" alt="" /></a>
-          <h3> ►</h3>
+          <h3> ► Tournoi</h3>
         </div>
         <div>
             <a href="realisations.php"><img src="images/pvesport.jpg" alt="" /></a>
-          <h3> ►</h3>
+          <h3> ► Esports</h3>
         </div>
         <div>
             <a href="realisations.php"><img src="images/pvaffiches.jpg" alt="" /></a>
-          <h3> ►</h3>
+          <h3> ► Affiches</h3>
         </div>
         <div>
             <a href="realisations.php"><img src="images/pvshowop.jpg" alt="" /></a>
-          <h3> ►</h3>
+          <h3> ► Showop</h3>
         </div>
         <div>
             <a href="realisations.php"><img src="images/pvyoutube.jpg" alt="" /></a>
-          <h3> ►</h3>
+          <h3> ► YouTube</h3>
         </div>
       </div>
     </div>

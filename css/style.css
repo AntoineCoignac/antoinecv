@@ -290,14 +290,14 @@ h2 {
     position: absolute;
     color: rgb(255, 255, 255);
     z-index: 2;
-    transform: translateY(-1.3em) translateX(0.1em);
-    font-size: 4em;
-    font-family:'Lucida Sans';
+    transform: translateY(-1.6em) translateX(0em);
+    font-size: 2.4em;
+    font-family:'Montserrat Light';
     transition: all ease 0.2s;
 }
 
 .contentRéalisations div:hover h3{
-    opacity: 30%;
+    opacity: 70%;
     transform: translateY(-1em) translateX(0.2em);
     transition: all ease 0.5s;
 }
