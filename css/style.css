@@ -1,0 +1,417 @@
+html {
+    min-width: 1200px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald";
+    cursor: crosshair;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(70, 70, 70, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.142);
+    border-radius: 12px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+header {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 10000;
+}
+
+header img {
+    min-width: 15px;
+    width: 5%;
+    border: solid 5px white;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: box-shadow 1s;
+}
+
+header img:hover {
+    box-shadow: rgba(238, 238, 238, 0.4) 2px 2px, rgba(219, 219, 219, 0.3) 4px 4px, rgba(196, 196, 196, 0.2) 6px 6px, rgba(172, 172, 172, 0.1) 8px 8px, rgba(146, 146, 146, 0.05) 10px 10px;
+    transition: box-shadow 0.5s;
+}
+
+footer {
+    position: fixed;
+    width: 40px;
+    height: 25px;
+    bottom: 30px;
+    right: 30px;
+}
+
+footer img {
+    min-width: 20px;
+    opacity: 0.50;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 54px 55px, rgba(0, 0, 0, 0.281) 0px -12px 30px, rgba(0, 0, 0, 0.226) 0px 4px 6px, rgba(0, 0, 0, 0.247) 0px 12px 13px, rgba(0, 0, 0, 0.199) 0px -3px 5px;
+    transition: box-shadow 1s;
+}
+
+footer img:hover {
+    background-color: #008080;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px, rgba(0, 0, 0, 0.2) 4px 4px, rgba(0, 0, 0, 0.1) 6px 6px, rgba(0, 0, 0, 0.05) 8px 8px, rgba(0, 0, 0, 0.02) 10px 10px;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    background: url('images/bkaccueil.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(82, 69, 69, 0.133);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
+}
+
+section h1 a {
+    text-decoration: none;
+    letter-spacing: .2rem;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: text-shadow 0.5s, letter-spacing 0.1s, color 0.2s, font-size 0.2s;
+}
+
+section h1 a:hover {
+    color: #ffffff;
+    mix-blend-mode: overlay;
+    text-shadow: 1px 1px 50px #ffffff;
+    letter-spacing: 25px;
+    font-size: 30px;
+    transition: letter-spacing 0.7s cubic-bezier(.46, .37, .1, .99), color 0.2s ease, font-size 0.2s ease;
+}
+
+div {
+    padding-bottom: 1%;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    text-align: justify;
+    padding: 1%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+h2 {
+    font-size: 5rem;
+    margin-left: 15%;
+    padding-top: 5%;
+    margin-bottom: 3%;
+    color: #008080;
+
+}
+
+#Presentation {
+    background: url("images/presentation.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(82, 69, 69, 0.133);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#Competences {
+    border-top: #008080 10px solid;
+    background: url("images/competences.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(82, 69, 69, 0.133);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+#QualitesDefauts {
+    /*background: url("images/qualitesdefauts.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+    background-size: cover;
+    background-color: #008080;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#QualitesDefauts h2 {
+    color: #ffffff;
+}
+
+#Parcours {
+    background: url("images/parcours.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(82, 69, 69, 0.133);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#Realisations {
+    border-top: #008080 10px solid;
+    background: url("images/realisations.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(82, 69, 69, 0.133);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+#Contact {
+    background: url("images/contact.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(82, 69, 69, 0.133);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.contentPrésentation {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.contentPrésentation img {
+    float: right;
+    width: 50%;
+    height: 50%;
+}
+
+.contentPrésentation p {
+    height: fit-content;
+}
+
+.contentCompétences {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.contentCompétences img{
+    height: auto;
+    width : 5%;
+    transform: translateY(-20%);
+}
+
+.contentQualitésDéfauts {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.contentQualitésDéfauts div {
+    height: fit-content;
+    width: 10%;
+}
+
+.contentQualitésDéfauts div img {
+    width: 100%;
+    height: 100%;
+}
+
+.contentQualitésDéfauts div h3 {
+    text-align: center;
+    color:#ffffff;
+}
+
+.contentParcours {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.contentParcours p {
+    height: fit-content;
+}
+
+.contentParcours img {
+    width: 50%;
+    height: 50%;
+}
+
+.contentRéalisations {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.contentRéalisations p {
+    height: fit-content;
+}
+
+.contentRéalisations div {
+    width: 19%;
+    height: 19%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contentRéalisations div img {
+    width: 100%;
+    height: 100%;
+    transition: all ease 0.2s;
+    position: relative; 
+    z-index: 1; 
+}
+
+.contentRéalisations div:hover img{
+    transform: translateY(3%);
+    filter: brightness(50%);
+    transition: all ease 0.5s;
+}
+
+.contentRéalisations div h3{
+    opacity: 0%;
+    display: block;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    transform: translateY(-1.3em) translateX(0.1em);
+    font-size: 4em;
+    font-family:'Lucida Sans';
+    transition: all ease 0.2s;
+}
+
+.contentRéalisations div:hover h3{
+    opacity: 30%;
+    transform: translateY(-1em) translateX(0.2em);
+    transition: all ease 0.5s;
+}
+
+.contentContact {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.contentContact p {
+    height: fit-content;
+    width : 25%;
+}
+
+#mess {
+    height: 100px;
+}
+
+#Presentation:hover div {
+    transform: translateY(0%) scale(100%);
+    opacity: 100%;
+    transition: all 1s ease;
+}
+
+#Presentation div {
+    transform: translateY(3%);
+    opacity: 0%;
+    transition: all 0.3s ease;
+}
+
+#Parcours:hover div {
+    transform: translateY(0%) scale(100%);
+    opacity: 100%;
+    transition: all 1s ease;
+}
+
+#Parcours div {
+    transform: translateY(3%);
+    opacity: 0%;
+    transition: all 0.3s ease;
+}
+
+#Parcours p {
+    width : 45%;
+}
+
+input,
+textarea {
+    background-color: #00000000;
+    border-style: none;
+    border-bottom: #000000 2px solid;
+}
+
+.bouton {
+    border-bottom: #000000 0px solid;
+    background-color: white;
+    width: 15%;
+    margin-right: 1%;
+    border-radius: 0%;
+}
+
+.bouton:hover {
+    background-color: rgb(218, 218, 218);
+    border-radius: 5%;
+}
+
+progress {
+    border: none;
+    width: 300px;
+    height: 10px;
+    background: #b8b8b8;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+
+progress {
+    color: #6aa8a8;
+}
+
+progress::-moz-progress-bar {
+    background: lightcolor;
+}
+
+progress::-webkit-progress-value {
+    background: #008080;
+}
+
+progress::-webkit-progress-bar {
+    background: rgb(255, 255, 255);
+}
+
+progress:hover {
+    background: #008080;
+    transform: translateX(5%);
+    transition: all 0.5s ease;
+}
+
+iframe{
+    transform: translateY(1em) translateX(-2.5em);
+    mix-blend-mode: darken;
+}
